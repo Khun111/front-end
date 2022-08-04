@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,200&family=Inter:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@100&display=swap');
+body {
+   background-color: hsl(233, 47%, 7%);
+   color: #fff;
+   font-size: 15px;
+   font-family: 'Lexend Deca', sans-serif;
+}
+span {
+    color: hsl(277, 64%, 61%);
+}
+.flex-con {
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+}
+.flex-item {
+    width: 400px;
+    height: 340px;
+}
+.flex-item1 {
+    padding: 30px 55px 0 45px;
+    background-color: hsl(244, 38%, 16%);
+    display: grid;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+
+}
+.flex-item2 {
+    background-image: linear-gradient(hsl(277, 64%, 61%, 50%),hsl(277, 64%, 61%, 50%)),url(images/image-header-desktop.jpg);
+    background-size: 450px 370px;
+    height: 370px;
+    width: 450px;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.stat {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    margin-bottom: -70px;
+}
+.word {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+#insight {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+@media(max-width: 700px) {
+    .flex-con {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .flex-item {
+        width: 300px;
+    }
+    .flex-item1 {
+        text-align: center;
+        padding: 0;
+        padding: 30px 15px 25px 15px;
+        height: 450px;
+        border-bottom-right-radius: 7px;
+        border-bottom-left-radius: 7px;
+        border-top-left-radius: none;
+        order: 2;
+    }
+    .stat {
+        display: block;
+        padding-top: 80px;
+    }
+    #stat1 {
+        margin-bottom: 20px;
+    }
+    #stat2 {
+        margin-bottom: 20px;
+    }
+    .flex-item2 {
+        background-image: none;
+        background-image: linear-gradient(hsl(277, 64%, 61%, 50%),hsl(277, 64%, 61%, 50%)),url(images/image-header-mobile.jpg);
+        background-size: 330px 200px;
+        background-repeat: no-repeat;
+        order: 1;
+        height: 200px;
+        width: 330px;
+        border-bottom-right-radius: none;
+        border-bottom-left-radius: none;
+        border-top-left-radius: 7px;
+    }
+}
